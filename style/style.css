@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+header{
+    max-width: 1400px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+}
+
+header a{
+    margin-right: 14px;
+    color: #383737;
+}
+
+header a:hover{
+    border-bottom: 1px solid #383737;
+}
+header button{
+    font-size: 18px;
+    font-weight: 500;
+    color: #26d86a;
+    cursor: pointer;
+}
+.groupButton{
+    display: flex;
+    align-items: center;
+}
+
+.iconMenu{
+    width: 40px;
+    display: none;
+}
+
+.register img{
+    margin-left: 4px;
+}
+header button:first-child{
+    border: none;
+    background: none;
+    font-weight: 200;
+    margin-right: 3px;
+}
+
+header .groupButton button:last-child{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    background-color: #dceee8;
+    border: none;
+    padding: 9px 13px;
+    border-radius: 4px;
+}
+article{
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+article header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 60px;
+}
+.panel{
+    width: 40%;
+    margin-left: 5%;
+}
+article header img{
+    width: 40%;
+    border-radius: 12px;
+    margin-right: 5%;
+}
+
+article header h1{
+    font-size: 43px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+article header b{
+    color: #26d86a;
+}
+article header p{
+    font-weight: 300;
+    color: #6b6a6a;
+    margin-bottom: 22px;
+}
+
+article header .panel input{
+    border: none;
+    padding-left: 6px;
+    border-left: 2px solid #26d86a;
+    color: #6b6b6b;
+    font-size: 14px;
+    font-weight: 300;
+    height: 35px;
+    outline: 0;
+    box-shadow: none;
+    width: 60%;
+}
+
+article header .panel button{
+    background-color: #26d86a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 9px 13px;
+    border-radius: 4px;
+}
+h5{
+    margin-top: 80px;
+    text-align: center;
+    color: #838080;
+}
+.fruits{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fruits img{
+    width: 50px;
+    opacity: 0.4;
+    margin: 0 50px;
+}
+
+.fruits img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.info.active{
+    display: flex;
+    flex-direction: row-reverse;    
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.info.active .wikiFruit{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 10%;
+    text-align: center;
+}
+.info.active .wikiFruit h3{
+    font-size: 30px;
+}
+.info.active .wikiFruit p{
+    font-weight: 300;
+    color: #6b6a6a;
+    font-size: 23px;
+}
+.info.active img{
+    width: 370px;
+}
+
+.info.active.red{
+    border-left: solid 7px rgb(230, 84, 84);
+}
+
+.info.active.yellow{
+    border-left: solid 7px #f8d24e;
+}
+
+.info.active.green{
+    border-left: solid 7px #c3bb22;
+}
+
+.info.active.orange{
+    border-left: solid 7px #e7791e;
+}
+/* TABELA */
+.tableFruit{
+    margin: 80px auto 0;
+    background-color: #dceee8;
+    border-radius: 11px;
+    padding: 30px 0;
+}
+table caption{
+    font-weight: 400;
+    text-align: center;
+    font-size: 47px;
+    color: #6ca18d;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+table{
+    margin: 0 auto;
+    width: 70%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 23px;
+}
+table th{
+    color: #50b495;
+    font-size: 18px;
+    font-weight: 400;
+}
+table tbody tr{
+    text-align: center;
+    background-color: white;
+    color: rgb(153, 147, 147);
+    font-weight: 400;
+}
+table tbody tr td:last-child{   
+    width: 40%;
+    padding: 4px 10px;
+    text-transform: lowercase;
+}
+table tbody tr:nth-child(2n){
+    background-color: #ececea;
+}
+table figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 16px;
+    padding: 4px 0;
+}
+/* FOOTER */
+footer{
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #e8e8ee;
+    padding: 4rem 0 4rem 0;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer header{
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+footer header img{
+    width: 50px;
+}
+
+footer header h2{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.mapFooter{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.mapFooter nav ul{
+    width: 100%;
+    display: flex;
+}
+
+.mapFooter nav ul li{
+    list-style: none;
+    
+}
+
+.mapFooter nav ul li a{
+    text-align: center;
+    margin: 0 16px;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+}
+
+.mapFooter nav ul li a:hover{
+    color: rgb(75, 72, 72);    
+}
+.social{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a:nth-child(1){
+    margin-right: 25px;
+}
+
+.social a:nth-child(3){
+    margin-left: 25px;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/* animação */
+
+
+@keyframes right{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.animate-right{
+    animation-name: right;
+    animation-duration: 300ms;
+}
+
+
+/* Breakpoints */
+@media (max-width: 1200px){
+    article header .panel input{
+        margin-bottom: 20px;
+    }
+    article header .panel h1{
+        font-size: 29px;
+        line-height: 30px;
+    }
+
+    article header .panel p, .panel button{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1054px){
+    article header img{
+        width: 48%;
+    }
+    .info.active{
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .info.active .wikiFruit{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .info.active .wikiFruit h3{
+        width: 90%;
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+    .info.active .wikiFruit p{
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .info.active img{
+        width: 190px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 910px){
+    article header{
+        align-items: center;
+    }
+    article header .panel{
+        width: 50%;
+        padding-right: 20px;
+    }
+    article header img{
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 765px){
+    .fruits img{
+        width: 45px;
+        margin: 30px;
+    }
+
+    .tableFruit{
+        margin-top: 35px;
+    }
+}
+@media (max-width: 670px){
+    .iconMenu{
+        display: initial;
+        position: absolute;
+        top: 2;
+        right: 5%;
+        cursor: pointer;
+    }
+    header{
+        display: none;
+        margin-top: 0;
+        padding: 20px 0;
+    }
+    header nav, header .groupButton{
+        display: none;
+    }
+
+    header .active, header .groupButton.activeBtn{
+        display: initial;
+    }
+
+    .activeHeader .groupButton button:last-child{
+        background-color: initial;
+        margin: 0 auto;
+        padding-top: 0;
+        text-align: center;
+    }
+    header, header nav a{
+        display: block;
+        margin-bottom: 13px;
+        text-align: center;
+    }
+    header nav a:hover{
+        color: #6b6a6a;
+        border: none;
+    }
+    .groupButton button{
+        margin-bottom: 13px;
+    }
+    .groupButton button:hover{
+        color: #5fe693;
+    }
+    header nav a:first-child{
+        margin-top: 10px;
+    }
+    body .activeHeader{
+        display: block;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 12px -1px rgba(0,0,0,0.85)
+    }
+
+    article header{
+        flex-wrap: wrap;
+        margin-top: 20px
+    }
+
+    article header .panel{
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    article header .panel input, article header .panel button{
+        width: 100%;
+    }
+
+    article header img{
+        width: 90%;
+        margin: 20px auto 0;
+    }
+
+    table{
+        width: 90%;
+        padding: 5px;
+        border-radius: 7px;
+    }
+
+    table caption{
+        font-size: 31px;
+    }
+
+    table figure{
+        display: block;
+    }
+
+    table figure img{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+
+    table figure img:first-child{
+        margin-top: 7px;
+    }
+
+    .mapFooter nav ul{
+        width: 100%;
+        display: initial;
+    }
+}
+
+@media (max-width: 470px){
+    .fruits img{
+        width: 35px;
+        margin: 8px;
+    }
+
+    .tableFruit{
+        margin-top: 29px;
+    }
+}

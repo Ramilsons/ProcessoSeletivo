@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Levamos pra você informações de algumas frutas e os benefícios que elas oferecem. Afinal, vai uma fruta aí?">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Home | Vai uma fruta aí?</title>
+</head>
+<body>
+    <header>
+        <img class="iconMenu" onclick="headerMobile()" src="./images/square.png" title="menu" alt="botão de menu">
+        <nav>
+            <a href="">Home</a>
+            <a href="">Receitas</a>
+            <a href="">Mais informações</a>
+        </nav>
+        <section class="groupButton">
+            <button>Entrar</button>
+            <button>Cadastrar</button>
+        </section>
+    </header>
+    <article>
+        <header>
+            <section class="panel animate-right">
+                <h1><b>Vai uma fruta aí?</b>Entenda mais sobre e veja os benefícios.</h1>
+                <p>As frutas apresentam uma grande quantidade de componentes que beneficiam diretamente a saúde, como vitaminas, minerais e alguns compostos bioativos (flavonoides e carotenoides, por exemplo). Em virtude da grande quantidade de benefícios atribuídos às frutas, recomenda-se que uma pessoa faça a ingestão de 5 a 9 porções de vegetais e frutas por dia. Um baixo consumo de frutas está relacionado com o aumento do risco de desenvolver problemas cardiovasculares e alguns tipos de câncer.</p>
+                <input type="email" placeholder="coloque seu e-mail aqui">
+                <button>Receber Novidades</button>
+            </section>
+            <img src="./images/jannis-brandt-8manzosDSGM-unsplash.jpg" alt="uma mesa com diversas frutas, no centro há um prato branco com frutas cortadas">
+        </header>
+        <h5>Clique em alguma fruta abaixo para mais informações</h5>
+        <section class="fruits">
+            <img src="./images/maca.png" alt="fruta maçã" title="maçã" onclick="info('maca')">
+            <img src="./images/banana.png" alt="fruta banana" title="banana" onclick="info('banana')">
+            <img src="./images/big-pear.png" alt="fruta pera" title="pera" onclick="info('pera')">
+            <img src="./images/abacaxi.png" alt="fruta abacaxi" title="abacaxi" onclick="info('abacaxi')">
+        </section>
+        <section class="info active">
+            <section class="wikiFruit">
+                <h3></h3>
+                <p></p>
+            </section>
+            <img src="" alt="">
+        </section>
+        <section class="tableFruit">
+            <table>
+                <caption>Outras Frutas</caption>
+                <thead>
+                    <tr>
+                        <th>Fruta</th>
+                        <th>Planta</th>
+                        <th>Benefícios</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/abacate.jpg" alt="Na foto aparece um abacate">
+                                <figcaption>abacate</figcaption>
+                            </figure>
+                        </td>
+                        <td>abacateiro</td>
+                        <td>ele é importante para saúde do coração, intestino e olhos, além de ajudar quem quer emagrecer</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/morango-fruta.jpg" alt="Na foto aparece três morangos">
+                                <figcaption>morango</figcaption>
+                            </figure>
+                        </td>
+                        <td>Morangueiro</td>
+                        <td>fortalecimento do sistema imunológico, auxília no funcionamento do sistema digestivo, ação anti-inflamatória, auxilio na cicatrização de ferimentos</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/laranja.jpg" alt="Na foto aparece laranjas cortadas">
+                                <figcaption>Laranja</figcaption>
+                            </figure>
+                        </td>
+                        <td>laranjeira</td>
+                        <td>Reduzir o colesterol alto, prevenir câncer de mama, manter a pele saudável e prevenir o envelhecimento precoce, fortalecer o sistema imune</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/uva.jpg" alt="Na foto aparece um cacho de uva">
+                                <figcaption>Uva</figcaption>
+                            </figure>
+                        </td>
+                        <td>videira</td>
+                        <td>Prevenção de problemas cardíacos, Melhora da saúde da visão, Controle da pressão arterial, Equilíbrio da glicose no sangue,  Aumento da saúde do sistema digestório</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+    <footer>
+        <header>
+            <img src="./images/maca.png" alt="Maçã representado uma logo">
+            <h2>Vai uma fruta aí?</h2>
+        </header>
+        <section class="mapFooter">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Mais informações</a>            
+                    </li>
+                    <li>
+                        <a href="">Receitas</a>
+                    </li>
+                    <li>
+                        <a href="">Entrar</a>
+                    </li>
+                    <li>
+                        <a href="">Cadastrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="social">
+            <a href="mailto:ramilsonfelixsilva9@gmail.com" target="_blank"><img src="./images/logotipo-do-gmail.png" alt="logo do Gmail" title="Ir para o email"></a>
+            <a href="https://www.linkedin.com/in/ramilson-silva-66b181153/" target="_blank"><img src="./images/linkedin.png" alt="logo do Linkedin" title="Ir para o LinkedIn"></a>
+            <a href="https://github.com/Ramilsons" target="_blank"><img src="./images/github.png" alt="logo do github" title="Ir para o GitHub"></a>
+        </section>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
